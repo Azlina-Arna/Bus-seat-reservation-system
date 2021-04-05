@@ -17,9 +17,9 @@
 
         <nav>
             <ul>
-                <?php echo '<li><a href="index.php"><strong>Home</strong></a></li>;' ?>
-                <?php echo '<li><a href="about.php"><strong>About</strong></a></li>;' ?>
-                <?php echo '<li><a href="history.php"><strong>Booking History</strong></a></li>;' ?>
+                <?php echo '<li><a href="index.php"><strong>Home</strong></a></li>' ?>
+                <?php echo '<li><a href="about.php"><strong>About</strong></a></li>' ?>
+                <?php echo '<li><a href="history.php"><strong>Booking History</strong></a></li>' ?>
             </ul>
         </nav>
         <br><br><br>
@@ -35,11 +35,12 @@
 
             echo '<table id="his_tab">
                  <tr>
-                    <th>Name</td>
-                    <th>Email</td>
-                    <th>IC/Passport</td>
-                    <th>Phone No.</td>
-                    <th>Booked seat</td>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>IC/Passport</th>
+                    <th>Phone No.</th>
+                    <th>Booked seat</th>
+                    <th>Paid</th>
                  </tr>';
             
             while ($row=mysqli_fetch_array($result)){
@@ -49,6 +50,7 @@
                 echo "<td>".$row['icnumber']."</td>";
                 echo "<td>".$row['phonenumber']."</td>";
                 echo "<td>".$row['seat']."</td>";
+                echo "<td>".$row['Payment']."</td>";
             }
 
             echo "</table>";
