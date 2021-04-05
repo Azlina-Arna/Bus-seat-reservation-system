@@ -48,10 +48,9 @@ if(isset($_POST['submit'])){
 
         <nav>
             <ul>
-            <li><a href="index.php"><strong>Home</strong></a></li>
-            <li><a href="about.html"><strong>About</strong></a></li>
-            <li><a href="history.html"><strong>Booking History</strong></a></li>
-         
+                <?php echo '<li><a href="index.php"><strong>Home</strong></a></li>;' ?>
+                <?php echo '<li><a href="about.php"><strong>About</strong></a></li>;' ?>
+                <?php echo '<li><a href="history.php"><strong>Booking History</strong></a></li>;' ?>
             </ul>
         </nav>
     </div>
