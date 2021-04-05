@@ -43,9 +43,9 @@ $seats= [
 
         <nav>
             <ul>
-                <?php echo '<li><a href="index.php"><strong>Home</strong></a></li>;' ?>
-                <?php echo '<li><a href="about.php"><strong>About</strong></a></li>;' ?>
-                <?php echo '<li><a href="history.php"><strong>Booking History</strong></a></li>;' ?>
+                <?php echo '<li><a href="index.php"><strong>Home</strong></a></li>' ?>
+                <?php echo '<li><a href="about.php"><strong>About</strong></a></li>' ?>
+                <?php echo '<li><a href="history.php"><strong>Booking History</strong></a></li>' ?>
             </ul>
         </nav>
     </div>
