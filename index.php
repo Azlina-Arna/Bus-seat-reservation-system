@@ -1,17 +1,4 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', '', 'reservation');
-$stmt= $mysqli->prepare("select * from reserve where seat=?");
-$stmt-> bind_param('s', $seat);
-$reserve= array();
-if($stmt->execute()){
-$result= $stmt->get_result();
-if($result->num_rows>0){
-    while($row = $result->fetch_assoc()){
-        $reserve [] = $row['seat'];
-    }
-$stmt->close();
-}
-}
 
 $seats= [
     ['window'=> '1A', 'double'=> '1B',  'Single'=> '1C'],
@@ -67,12 +54,7 @@ $seats= [
 
         <tr>
             <td><?php echo $s['window'];?> 
-           <?php if(in_array($seat, $reserve)){ ?>
-                <a href='index.php' class= "btn">Booked</a>
-            <?php } else{ ?>
-            <a href='booking.php?seat=<?php echo $s['window'];?>' class= "btn">Reserve</a> 
-            <?php } ?> 
-        </td>
+            <a href='booking.php?seat=<?php echo $s['window'];?>' class= "btn">Reserve</a> </td>
             <td><?php echo $s['double'];?>
             <a href='booking.php?seat=<?php echo $s['double'];?>' class= "btn">Reserve</a> </td>
             <td><?php echo $s['Single'];?>
