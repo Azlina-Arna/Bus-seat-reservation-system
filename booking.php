@@ -80,16 +80,15 @@
           
           <input type="submit", name="submit" value="Submit">
         </form>
-        
-        <Div>
-          <H2>Procced with the payment</H2>
-          <center><input type="button" onclick="location.href='payment.php'" value="Payment"></center>
-        </Div>
-
-        
+      
       </div>
     </div>
   </div>
+  <Div>
+          <H2>Procced with the payment</H2>
+          <center><input type="button" onclick="location.href='payment.php'" value="Payment"></center>
+ </Div>
+
 </body>
 </html>
             
