@@ -38,7 +38,7 @@
 
            <div class="column">
                 <div class="member">
-                    <img src="sheilla.jpeg" alt="Sheilla" style="width: 100%">
+                    <img src="sheilla.png" alt="Sheilla" style="width: 100%">
                     <div class="con_name">
                         <h2>Sheilla Chairiandita</h2>
                         <p class="position">Member</p>
