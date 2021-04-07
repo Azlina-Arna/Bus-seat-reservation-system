@@ -79,9 +79,12 @@
           <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number..">
           
           <input type="submit", name="submit" value="Submit">
-          <input type="button" onclick="location.href='payment.php'" value="Payment">
         </form>
         
+        <Div>
+          <H2>Procced with the payment</H2>
+          <center><input type="button" onclick="location.href='payment.php'" value="Payment"></center>
+        </Div>
 
         
       </div>
